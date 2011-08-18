@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/KSoap2"/>
+	<classpathentry kind="lib" path="H:/Documents and Settings/Sriya/Project_WorkSpace/ExternalJars/ksoap2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

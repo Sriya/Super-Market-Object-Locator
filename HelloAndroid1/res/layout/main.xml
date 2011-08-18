@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center_horizontal" android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
+	<EditText android:textColor="@color/BackGroundGray"
+		android:id="@+id/entry" android:background="@android:drawable/editbox_background"
+		android:layout_height="wrap_content" android:layout_below="@+id/label"
+		android:layout_alignParentLeft="true" android:layout_marginTop="17dp"
+		android:layout_alignRight="@+id/label" android:layout_width="match_parent"></EditText>
+	<TextView android:text="Please type your item name here:"
+		android:id="@+id/label" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"></TextView>
+	<Spinner android:prompt="@string/store_name_prompt" android:id="@+id/spinner"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/textView1" android:layout_alignParentLeft="true"
+		android:layout_marginTop="20dp" android:layout_alignRight="@+id/entry"></Spinner>
+	<Button android:id="@+id/xxl" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Cancel"
+		android:layout_alignTop="@+id/ok" android:layout_toRightOf="@+id/ok"
+		android:layout_marginLeft="27dp"></Button>
+	<TextView android:id="@+id/TextView01" android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_below="@+id/spinner" android:layout_alignParentLeft="true" android:textColor="@color/Green"></TextView>
+	<TextView android:text="Please select the store :" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_below="@+id/entry" android:layout_alignParentLeft="true" android:layout_marginTop="16dp"></TextView>
+	<Button android:layout_height="wrap_content" android:id="@+id/ok" android:text="Search" android:layout_width="wrap_content" android:layout_below="@+id/TextView01" android:layout_alignParentLeft="true" android:layout_marginTop="15dp"></Button>
+
+</RelativeLayout>

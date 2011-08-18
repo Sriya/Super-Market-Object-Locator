@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://project.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://project.com" xmlns:intf="http://project.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://project.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getItemName">
+    <complexType>
+     <sequence>
+      <element name="name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getItemNameResponse">
+    <complexType>
+     <sequence>
+      <element name="getItemNameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getResultFromDB">
+    <complexType>
+     <sequence>
+      <element name="name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getResultFromDBResponse">
+    <complexType>
+     <sequence>
+      <element name="getResultFromDBReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getResultFromDB_old">
+    <complexType>
+     <sequence>
+      <element name="name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getResultFromDB_oldResponse">
+    <complexType>
+     <sequence>
+      <element name="getResultFromDB_oldReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getResultFromDB_oldResponse">
+
+      <wsdl:part element="impl:getResultFromDB_oldResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getResultFromDB_oldRequest">
+
+      <wsdl:part element="impl:getResultFromDB_old" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getResultFromDBResponse">
+
+      <wsdl:part element="impl:getResultFromDBResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getItemNameRequest">
+
+      <wsdl:part element="impl:getItemName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getResultFromDBRequest">
+
+      <wsdl:part element="impl:getResultFromDB" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getItemNameResponse">
+
+      <wsdl:part element="impl:getItemNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="InputItemDetail">
+
+      <wsdl:operation name="getItemName">
+
+         <wsdl:input message="impl:getItemNameRequest" name="getItemNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getItemNameResponse" name="getItemNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getResultFromDB">
+
+         <wsdl:input message="impl:getResultFromDBRequest" name="getResultFromDBRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getResultFromDBResponse" name="getResultFromDBResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getResultFromDB_old">
+
+         <wsdl:input message="impl:getResultFromDB_oldRequest" name="getResultFromDB_oldRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getResultFromDB_oldResponse" name="getResultFromDB_oldResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="InputItemDetailSoapBinding" type="impl:InputItemDetail">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getItemName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getItemNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getItemNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getResultFromDB">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getResultFromDBRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getResultFromDBResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getResultFromDB_old">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getResultFromDB_oldRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getResultFromDB_oldResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="InputItemDetailService">
+
+      <wsdl:port binding="impl:InputItemDetailSoapBinding" name="InputItemDetail">
+
+         <wsdlsoap:address location="http://localhost:8080/WebService_Project/services/InputItemDetail"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Store Item Locator</string>
+	<string name="hello">Hello World, HelloAndroid1!</string>
+
+	<color name="ItemLocatorColor">#2e8b57</color>
+	<string name="myClickHandler">myClickHandler</string>
+	<string name="getItem">getItem</string>
+
+	<string name="calc">Submit</string>
+	<color name="TextBoxColorWhite">#FEE8D6</color>
+	<color name="TextBoxColor">#586949</color>
+	<color name="BackGroundGray">#212121</color>
+	<color name="WhiteColor">#FFFF</color>
+	
+	<string name="store_name_prompt">Choose a Store</string>
+    <string-array name="store_name_array">
+        <item>Walmart</item>
+        <item>Target</item>
+    </string-array>
+    <color name="Green">#33CC66</color>
+</resources>

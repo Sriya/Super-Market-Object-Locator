@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project name="StandaloneJavaproj" default="init" basedir=".">
+   	<target name="init" >
+		<!-- . is used for pointing to the current directory -->
+		<javac srcdir="." destdir="." >			
+			<include name="*.java" />
+		</javac>
+	</target>
+</project>
